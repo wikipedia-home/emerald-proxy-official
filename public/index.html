@@ -1,46 +1,61 @@
-<!DOCTYPE html>
-<html lang="en">
-   <head>
+<html lang="en"><head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <!-- Important: Use &zwnj; to mess with keywords.  -->
       <title>Emer&zwnj;ald  Pro&zwnj;xy</title>
       <link rel="icon">
-      <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&amp;display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Roboto&amp;display=swap" rel="stylesheet">
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <link rel="stylesheet" href="/assets/css/styles.css">
-     <!-- Google adsense script -->
-     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7529225411166140"
-     crossorigin="anonymous"></script>
-   </head>
-   </body>
+      <link rel="stylesheet" href="/assets/css/styles.css"></head>
+  <body id="body">
+   
+   
    <!--Display Frame-->
    <iframe id="frame" style="display:block; visibility: hidden;"></iframe> 
-    <div>
+  <div id="settings">
+  <button onclick="openTab()"> 
+    <img alt="settings" src="/assets/img/settings.png" id="settingsbtn">
+  </button>
+  </div>
+  
+  <div>
       <h1> <span class="black_text">Em&zwnj;erald pro&zwnj;xy</span> </h1>
-      <form class="url" method="POST"">
+      <form class="url" method="POST" "="">
          <input style="border: 2px solid black;
-  border-radius: 4px;"name="url" id="iurl" autocomplete="off" placeholder="Browse the web" type="text">
-        <button type="submit" id="alloydefault">G&zwnj;o!</button>
+  border-radius: 4px;" name="url" id="iurl" autocomplete="off" placeholder="Browse the web" type="text">
+        <button class="btn" type="submit" id="alloydefault">G&zwnj;o!</button>
       </form>
    </div>
-   <div style="position: relative; text-align: center">
-      <p style="position: fixed; bottom: 0; width:100%; text-align: left; color: black;"><a href="https://discord.gg/DctXzJsQrS" style="color: black;">Discord</a> | <a href="https://github.com/frog22222/emerald" style="color: black;">Github</a></p>
+  
+   <div id="footl">
+      <p>
+        <a href="https://discord.gg/DctXzJsQrS">Discord</a> | <a href="https://github.com/frog22222/emerald">Github</a></p>
    </div>
+  
   <!--Tab Cloaking-->
-<div>
+<div id="popup">
+  
+  <div>
   <input id="title" placeholder="Enter a title">
     <button onclick="setTitle()">Set</button>
   </div>
-  <div>
+  <div>  
     <input id="icon" placeholder="Enter a favicon URL">
       <button onclick="setIcon()">Set</button>
     </div>
    <!--Scripts-->
+    <script>
+      function openTab() {
+      var popup = document.getElementById("popup")
+      popup.classList.toggle("open")
+      }  
+    </script>
       <script src="/assets/js/surf.js">
     </script>
       <script src="/assets/js/index.js">
     </script>
-   </body>
-</html>
+  <script src="/assets/js/theme.js">
+    </script>
+   
+</div></body></html>
